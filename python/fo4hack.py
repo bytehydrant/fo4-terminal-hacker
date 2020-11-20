@@ -25,14 +25,11 @@ class Word:
                 distinct.add(l)
                 #yield l
         self.distinction = len(distinct)
-        print(self.distinction)
 
         #TODO set deviation
 
     def prune(self, names):
-        print(" ".join(names))
         self.comparisons = list(filter(lambda comp: comp.name in names, self.comparisons))
-        print("after"+str(len(self.comparisons)))
 
 possibles = []
 while True:
@@ -49,7 +46,6 @@ while True:
     possibles.append(Word(word))
 
 for left in possibles:
-    print("build possibles")
     left.buildComparisons(possibles)
 
 while True:
