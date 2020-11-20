@@ -3,3 +3,5 @@ C#/bin/*
 C#/.vs/*
 .vscode/*
 C#/*.sln
+C#/.vscode/*
+obj/*
